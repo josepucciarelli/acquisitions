@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "repository": {
     "type": "git",
@@ -25,10 +28,13 @@
   "homepage": "https://github.com/josepucciarelli/acquisitions#readme",
   "dependencies": {
     "@eslint/js": "^9.36.0",
+    "@neondatabase/serverless": "^1.0.2",
     "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "drizzle-kit": "^0.31.5",
     "eslint": "^9.0.0",
     "prettier": "^3.3.3"
   }
